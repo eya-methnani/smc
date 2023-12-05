@@ -89,6 +89,8 @@ h3, h4 {
 
 p {
   color: #555;
+  font-size:18px;
+  text-align: center;
 }
 
 /* Example: Add styles for your visualizations (replace with actual visualization styles) */

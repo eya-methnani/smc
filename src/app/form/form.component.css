@@ -4,19 +4,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(https://img.freepik.com/free-vector/organic-fluid-background_1199-354.jpg?w=900&t=st=1701639706~exp=1701640306~hmac=eb9350b6a42e954b33aadee05723ca54ce95dbbfa79f97c9a3297d75c03f28e7https://img.freepik.com/free-vector/organic-fluid-background_1199-354.jpg?w=900&t=st=1701639706~exp=1701640306~hmac=eb9350b6a42e954b33aadee05723ca54ce95dbbfa79f97c9a3297d75c03f28e7);
+  background-image: url('../../assets/hhhhhhh31151378_7755606.jpg');
   background-size:cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-color: #f0f0f0; /* Set your desired background color */
 }
 
 .form-container {
-  margin-top: 50px;
+  margin: 50px auto;
   background-color: #fff; /* Set the background color of the form container */
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  max-width: 1000px; /* Limit the width for better readability */
+  max-width: 700px; /* Limit the width for better readability */
+  width: 90%;
 }
 
 .form-question {
