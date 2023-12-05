@@ -1,6 +1,7 @@
+// src/app/app-routing.module.ts
+import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule , Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
@@ -10,28 +11,16 @@ import { IntroductionComponent } from './introduction/introduction.component';
 import { FormComponent } from './form/form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { TipsComponent } from './tips/tips.component';
-import { AppRoutingModule } from './app-routing.module'; // Import the AppRoutingModule
 
-
-
+const routes: Routes = [
+    { path: '', component: HomeComponent },
+    { path: 'statistics', component: StatisticsComponent },
+    {path:'form',component:FormComponent},
+    { path: 'tips', component: TipsComponent }
+];
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    HeaderComponent,
-    CarouselComponent,
-    StatisticsComponent,
-    IntroductionComponent,
-    FormComponent,
-    TipsComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    ReactiveFormsModule,
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
 })
-export class AppModule { }
+export class AppRoutingModule { }
