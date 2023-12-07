@@ -10,7 +10,7 @@ import { IntroductionComponent } from './introduction/introduction.component';
 import { FormComponent } from './form/form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { TipsComponent } from './tips/tips.component';
-import { AppRoutingModule } from './app-routing.module'; // Import the AppRoutingModule
+import { AppRoutingModule } from './app-routing.module';
 
 
 
@@ -24,7 +24,8 @@ import { AppRoutingModule } from './app-routing.module'; // Import the AppRoutin
     StatisticsComponent,
     IntroductionComponent,
     FormComponent,
-    TipsComponent
+    TipsComponent,
+    
   ],
   imports: [
     BrowserModule,
